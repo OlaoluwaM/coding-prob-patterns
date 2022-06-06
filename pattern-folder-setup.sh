@@ -11,7 +11,4 @@ echo "Creating Directory and boilerplate files for ${patternName}...."
 mkdir $rootDir/patterns/$patternName
 touch $rootDir/patterns/$patternName/pattern-info.md
 
-mkdir $rootDir/patterns/$patternName/problem-name
-touch $rootDir/patterns/$patternName/problem-name/README.md
-
 echo "Done"
