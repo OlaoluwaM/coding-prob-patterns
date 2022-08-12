@@ -1,3 +1,3 @@
 # Minimum Window Substring
 
-[Problem Description](https://leetcode.com/problems/minimum-window-substring/)
+[Problem Link](https://leetcode.com/problems/minimum-window-substring/)

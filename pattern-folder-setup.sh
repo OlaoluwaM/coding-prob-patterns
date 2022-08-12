@@ -9,6 +9,11 @@ test -d $rootDir/patterns/$patternName && echo "Directory for $patternName alrea
 echo "Creating Directory and boilerplate files for ${patternName}...."
 
 mkdir $rootDir/patterns/$patternName
-touch $rootDir/patterns/$patternName/pattern-info.md
+
+cat <<EOF >$rootDir/patterns/$patternName/pattern-info.md
+  # $patternName
+
+  [Link]()
+EOF
 
 echo "Done"

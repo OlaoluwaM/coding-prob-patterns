@@ -2,7 +2,7 @@
 
 [Problem Link](https://leetcode.com/problems/product-of-array-except-self/)
 
-## Approaches
+## Approaches and Solution insights
 
 There are two main approaches, but this is contingent on whether we are allowed to use the division operator or not
 

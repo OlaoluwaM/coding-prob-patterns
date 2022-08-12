@@ -11,7 +11,15 @@ echo "Creating directory and boilerplate files for $patternName/$problemName....
 targetDir="$rootDir/patterns/$patternName/$problemName"
 
 test -d "$targetDir" || mkdir "$targetDir"
-test -f "$targetDir/README.md" || touch "$targetDir/README.md"
+test -f "$targetDir/README.md" || {
+  cat <<EOF >"$targetDir/README.md"
+  # $problemName
+
+  [Problem Link]()
+
+  ## Approaches and Solution insights
+EOF
+}
 
 touch "$targetDir/solution.ts"
 touch "$targetDir/solution.py"
