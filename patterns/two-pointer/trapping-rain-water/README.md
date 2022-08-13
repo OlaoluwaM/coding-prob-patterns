@@ -31,6 +31,20 @@
 
 3. **How are the pointers arranged?**: Opposite sides, moving at the same speed
 
+4. **Why do we need to get the maximum boundary heights for any height in `heights`?**:
+   Since we are tasked with finding the largest amount of water that can be trapped, it is
+   obvious that we would need to seek out the largest boundary for each side in the
+   algorithm: a `leftMax` and a `rightMax`. By maximizing the heights of the boundaries,
+   we ensure that the amount of water trapped within is equally as large
+
+5. Since we are searching for the maximum boundaries, we always move the pointer away from
+   the smaller boundary. Moreover, since the smaller boundary in this case is equivalent
+   to `Math.min(leftHeight, rightHeight)`, so we won't need to include the other boundary
+   in our calculation of the maximum water trappable for that iteration. **The taller the
+   boundaries, the greater the amount of water trapped within**
+
+6. For any given height we need to find the maximum boundary on both sides
+
 ### Approaches
 
 There exists multiple ways to implement a solution for this problem, but the most
@@ -39,15 +53,3 @@ constant space complexity.
 
 Nevertheless, other solutions like the nested array, dynamic programming, or stack-based
 solutions still exist.
-
-### Write these properly later
-
-For any given height we need to find the maximum boundary on both sides
-
-We find the maximum boundaires because we are trying to compute the maximum amount of
-water trappable
-
-Since we are searching for the maximum boundaires, we always move the pointer away from
-the smaller boundary
-
-We kwwp track of the largest boundary found at both sides of the array
