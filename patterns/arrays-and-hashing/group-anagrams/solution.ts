@@ -38,8 +38,8 @@ function toHashMapCharFreqStr(str: string): string {
   return hashMapCharFreqArr.join(CHAR_FREQ_DELIMITER);
 }
 
-// Other Solution
 
+// Other Solution
 function groupAnagramsTwo(words: string[]): string[][] {
   const arrOfSortedWords = words.map(sortWord);
 

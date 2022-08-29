@@ -26,6 +26,7 @@ class Solution:
     def multiply_prefix_by_postfix(
         self, prefix_list: List[int], initial_nums: List[int]
     ) -> List[int]:
+        print(f"prefix_list: {prefix_list}")
         postfix_list: List[int] = prefix_list
         curr_postfix: int = 1
 
@@ -35,4 +36,13 @@ class Solution:
             num_from_initial_nums = initial_nums[ind]
             curr_postfix *= num_from_initial_nums
 
+        print(f"postfix_list: {postfix_list}")
         return postfix_list
+
+
+# [5, 2, 3, 4]
+# [1, 5, 10, 30]
+# [24, 60, 40, 30]
+
+new_solution_dict = Solution()
+print(new_solution_dict.productExceptSelf([5, 2, 3, 4]))
