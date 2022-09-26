@@ -18,6 +18,10 @@ test -f "$targetDir/README.md" || {
   [Problem Link]()
 
   ## Approaches and Solution insights
+
+  ### General Insight/Approach
+
+  ### Problem Specific Insight/Approach
 EOF
 }
 
